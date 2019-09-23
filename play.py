@@ -7,6 +7,7 @@ if __name__ == '__main__':
 
     # Pass in a URI to a media file to have it streamed through the Sonos
     # speaker
+    sonos.volume = 6
     sonos.play_uri(
         'https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_nonstop_96.mp3')
 
@@ -18,3 +19,10 @@ if __name__ == '__main__':
 
     # Play a stopped or paused track
     sonos.play()
+
+
+## Python commandline example
+# import soco
+# sonos = soco.SoCo("192.168.1.56")
+# sonos.player_name
+# sonos.volume
