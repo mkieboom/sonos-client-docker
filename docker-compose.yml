@@ -1,0 +1,13 @@
+---
+version: '3.5'
+services:
+
+  sonos-client-docker:
+    image: mkieboom/sonos-client-docker:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: sonos-client-docker
+    container_name: sonos-client-docker
+    ports:
+      - "11234:22"

@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     track = sonos.get_current_track_info()
 
-    print track['title']
+    #print track['title']
 
     sonos.pause()
 

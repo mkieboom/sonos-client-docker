@@ -8,12 +8,12 @@ if __name__ == '__main__':
     # Pass in a URI to a media file to have it streamed through the Sonos
     # speaker
     sonos.volume = 6
-    sonos.play_uri(
-        'https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_nonstop_96.mp3')
+    sonos.play_uri('http://22183.live.streamtheworld.com/SKYRADIO.mp3')
+    #sonos.play_uri('https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_nonstop_96.mp3')
 
     track = sonos.get_current_track_info()
 
-    print track['title']
+    #print track['title']
 
     sonos.pause()
 
